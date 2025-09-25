@@ -290,6 +290,8 @@ def display_conversation_row(conversation):
 # MAIN PROGRAM
 load_current_conversation()
 
+st.set_page_config(page_title="Personal GPT", layout="centered")
+
 available_models = list(model_pricings.keys())
 
 if "MODEL" not in st.session_state:
